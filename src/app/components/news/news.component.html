@@ -1,0 +1,19 @@
+<p>news works!</p>
+
+<input type="text" id="user-input" [(ngModel)]="userInfo.userName"/>
+<button (click)='postData()'>post request</button> &nbsp;
+
+<button (click)='getData()'>get request</button> &nbsp;
+
+<!-- 如何通过jsonp 获取数据??? -->
+<!-- <button (click)='getJsonp()'>get getJsonp request</button> &nbsp; -->
+
+<!-- 通过axios 获取数据 -->
+<button (click)='axiosGetData()'>axios get request</button> &nbsp;
+
+<hr>
+<br><br>
+<ul>
+    <li *ngFor="let item of list">{{item.name}}</li>
+</ul>
+
